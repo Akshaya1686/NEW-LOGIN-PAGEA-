@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        .login-box {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align:center;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 95%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        a{
+            text-decoration:none ;
+        }
+    </style>
+</head>
+
+<body>
+    
+ <right>
+    <div class="login-box">
+        <h2 style="color: cornflowerblue;">Login</h2>
+
+        <form>
+            <label form="Username"> Username</label>
+            <input type="text" id="Username" name="usernme" value=" "><br>
+            <label form="Password">Password </label>
+            <input type="password" id="Password" name="Password" value="" ><br>
+            <a href="#"> forgot password?</a><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
